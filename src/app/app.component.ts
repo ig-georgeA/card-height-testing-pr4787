@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IsActiveMatchOptions, Router, RouterLink, RouterOutlet } from '@angular/router';
-import { IGX_NAVIGATION_DRAWER_DIRECTIVES } from '@infragistics/igniteui-angular';
+import { IGX_NAVIGATION_DRAWER_DIRECTIVES } from 'igniteui-angular';
 
 @Component({
   selector: 'app-root',
