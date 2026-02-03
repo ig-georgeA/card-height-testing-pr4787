@@ -1,0 +1,58 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  padding: 16px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.card {
+  --header-text-color: var(--ig-card-header-text-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  --subtitle-text-color: var(--ig-card-subtitle-text-color, lch(from hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1) calc(l + (50 - l) * 0.1 + sign(50 - l) * 7) c h));
+  --content-text-color: var(--ig-card-content-text-color, lch(from hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1) calc(l + (50 - l) * 0.1 + sign(50 - l) * 7) c h));
+  --actions-text-color: var(--ig-card-actions-text-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  --background: var(--ig-card-background, var(--surface-500));
+  overflow: unset;
+  height: max-content;
+  flex-shrink: 0;
+}
+.media-content {
+  min-height: 200px;
+  max-height: 200px;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.image {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.text {
+  height: max-content;
+  min-width: min-content;
+}
+.button {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}

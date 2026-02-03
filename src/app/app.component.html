@@ -1,0 +1,37 @@
+<igx-nav-drawer [isOpen]="true" [pin]="true" width="240px" class="nav-drawer">
+  <ng-template igxDrawer>
+    <div igxDrawerItem [active]="isActive(`/card-default`)" [routerLink]="[`/card-default`]">
+      <span>Card Default 1</span>
+    </div>
+    <div igxDrawerItem [active]="isActive(`/card-default-2`)" [routerLink]="[`/card-default-2`]">
+      <span>Card Default 2</span>
+    </div>
+    <div igxDrawerItem [active]="isActive(`/media-column`)" [routerLink]="[`/media-column`]">
+      <span>Media Column 1</span>
+    </div>
+    <div igxDrawerItem [active]="isActive(`/media-column-2`)" [routerLink]="[`/media-column-2`]">
+      <span>Media Column 2</span>
+    </div>
+    <div igxDrawerItem [active]="isActive(`/actions-column-1`)" [routerLink]="[`/actions-column-1`]">
+      <span>Actions Column 1</span>
+    </div>
+    <div igxDrawerItem [active]="isActive(`/actions-column-2`)" [routerLink]="[`/actions-column-2`]">
+      <span>Actions Column 2</span>
+    </div>
+    <div igxDrawerItem [active]="isActive(`/social`)" [routerLink]="[`/social`]">
+      <span>Social 1</span>
+    </div>
+    <div igxDrawerItem [active]="isActive(`/social-2`)" [routerLink]="[`/social-2`]">
+      <span>Social 2</span>
+    </div>
+    <div igxDrawerItem [active]="isActive(`/all-cards`)" [routerLink]="[`/all-cards`]">
+      <span>All Cards</span>
+    </div>
+    <div igxDrawerItem [active]="isActive(`/card-cropping`)" [routerLink]="[`/card-cropping`]">
+      <span>Card Cropping</span>
+    </div>
+  </ng-template>
+</igx-nav-drawer>
+<div class="view-container">
+  <router-outlet></router-outlet>
+</div>
