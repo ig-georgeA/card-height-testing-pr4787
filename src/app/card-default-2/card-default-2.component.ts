@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IGX_CARD_DIRECTIVES, IgxButtonDirective, IgxIconButtonDirective, IgxIconComponent } from '@infragistics/igniteui-angular';
+import { IGX_CARD_DIRECTIVES, IgxButtonDirective, IgxIconButtonDirective, IgxIconComponent } from 'igniteui-angular';
 
 @Component({
   selector: 'app-card-default-2',
